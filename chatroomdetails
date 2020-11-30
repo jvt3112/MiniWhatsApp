@@ -1,0 +1,16 @@
+- Add an option to create a chat room
+- port number as well (since we want multiple chat room)
+- request for users to join the chat room if hey are online 
+and print request not sent if they are offline
+- if accpeted their client will get connected to that particialur room 
+- mssg will be broadcated in that room and they will be able to see every messages
+- if want to quit the chat room type :q 
+
+
+
+client - port -- chat 
+registry - naya socket 
+
+
+
+TODO 
