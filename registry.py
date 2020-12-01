@@ -277,4 +277,3 @@ while inputs:
                     
 # registry tcp socket is closed
 tcpSocket.close()
-

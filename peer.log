@@ -358,3 +358,251 @@ INFO:root:Send to 192.168.56.1:2523 -> :q
 INFO:root:Received from 192.168.56.1 -> :q ending-side
 INFO:root:Send to 192.168.56.1:15600 -> LOGOUT sneha
 INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Send to 192.168.56.1:15600 -> JOIN adi2 1234 Hi! There we are using MiniWhatsApp
+INFO:root:Received from 192.168.56.1 -> join-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 6425
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 7653
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:6425
+INFO:root:Send to 192.168.56.1:6425 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 6245
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 4625
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:4625
+INFO:root:Send to 192.168.56.1:4625 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 4314
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 6426
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:4314
+INFO:root:Send to 192.168.56.1:4314 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 4311
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 6356
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:6356
+INFO:root:Send to 192.168.56.1:6356 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 4315
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 5243
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:4315
+INFO:root:Send to 192.168.56.1:4315 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:5243
+INFO:root:Send to 192.168.56.1:5243 -> CHAT-REQUEST 4315 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 4315 adi
+INFO:root:Send to 192.168.56.1 -> OK adi2
+INFO:root:Received from 192.168.56.1:5243 -> OK adi2
+INFO:root:Send to 192.168.56.1:4315 -> OK
+INFO:root:Received from 192.168.56.1 -> OK
+INFO:root:Received from 192.168.56.1 -> gsdg
+INFO:root:Received from 192.168.56.1 -> adfa
+INFO:root:Received from 192.168.56.1 -> :q
+INFO:root:Send to 192.168.56.1:4315 -> 
+INFO:root:Send to 192.168.56.1:4315 -> :q
+INFO:root:Received from 192.168.56.1 -> :q ending-side
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:5243
+INFO:root:Send to 192.168.56.1:5243 -> CHAT-REQUEST 4315 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 4315 adi
+INFO:root:Send to 192.168.56.1 -> OK adi2
+INFO:root:Received from 192.168.56.1:5243 -> OK adi2
+INFO:root:Send to 192.168.56.1:4315 -> OK
+INFO:root:Received from 192.168.56.1 -> OK
+INFO:root:Send to 192.168.56.1:4315 -> dasf
+
+INFO:root:Send to 192.168.56.1:5243 -> fad
+
+INFO:root:Received from 192.168.56.1 -> :q
+INFO:root:Send to 192.168.56.1:4315 -> :q
+INFO:root:Send to 192.168.56.1:5243 -> 
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1 -> 
+INFO:root:Received from 192.168.56.1:4315 -> 
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 5245
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 5245
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 6362
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:5245
+INFO:root:Send to 192.168.56.1:5245 -> CHAT-REQUEST 6362 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 6362 adi2
+INFO:root:Send to 192.168.56.1 -> OK adi
+INFO:root:Received from 192.168.56.1:5245 -> OK adi
+INFO:root:Received from None -> OK
+-> OK
+INFO:root:Send to 192.168.56.1:6362 -> gdf
+INFO:root:Received from None -> gsadg
+gsadg
+INFO:root:Send to 192.168.56.1:6362 -> gsf
+INFO:root:Send to 192.168.56.1:5245 -> gsfg
+INFO:root:Received from 192.168.56.1 -> gsfg
+INFO:root:Received from 192.168.56.1 -> gsf
+INFO:root:Send to 192.168.56.1:5245 -> :Q
+
+INFO:root:Send to 192.168.56.1:5245 -> :q
+
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi2
+INFO:root:Send to 192.168.56.1:6362 -> 
+INFO:root:Send to 192.168.56.1:6362 -> :q
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 5245
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 5255
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 5278
+INFO:root:Received from 192.168.56.1 -> login-online
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi2
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 4624
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 7464
+INFO:root:Received from 192.168.56.1 -> login-online
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 4565
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:4624
+INFO:root:Send to 192.168.56.1:4624 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:4624
+INFO:root:Send to 192.168.56.1:4624 -> CHAT-REQUEST 4565 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 4565 adi
+INFO:root:Send to 192.168.56.1 -> OK adi2
+INFO:root:Received from 192.168.56.1:4624 -> OK adi2
+INFO:root:Send to 192.168.56.1:4565 -> OK
+INFO:root:Received from None -> OK
+INFO:root:Send to 192.168.56.1:4624 -> adf
+INFO:root:Received from 192.168.56.1 -> adf
+INFO:root:Send to 192.168.56.1:4624 -> adf
+INFO:root:Received from 192.168.56.1 -> adf
+INFO:root:Send to 192.168.56.1:4565 -> fad
+INFO:root:Received from None -> fad
+INFO:root:Send to 192.168.56.1:4624 -> f:q
+INFO:root:Received from 192.168.56.1 -> f:q
+INFO:root:Send to 192.168.56.1:4624 -> :q
+INFO:root:Received from 192.168.56.1 -> :q
+INFO:root:Received from 192.168.56.1:4624 -> 
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Send to 192.168.56.1:4565 -> 
+INFO:root:Send to 192.168.56.1:4565 -> :q
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi2
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 7653
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 5643
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:5643
+INFO:root:Send to 192.168.56.1:5643 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:5643
+INFO:root:Send to 192.168.56.1:5643 -> CHAT-REQUEST 7653 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 7653 adi2
+INFO:root:Send to 192.168.56.1 -> OK adi
+INFO:root:Received from 192.168.56.1:5643 -> OK adi
+INFO:root:Send to 192.168.56.1:7653 -> OK
+INFO:root:Received from None -> OK
+INFO:root:Send to 192.168.56.1:7653 -> fadf
+INFO:root:Received from None -> fadf
+INFO:root:Send to 192.168.56.1:7653 -> fad
+INFO:root:Received from None -> fad
+INFO:root:Send to 192.168.56.1:5643 -> adfa
+INFO:root:Received from 192.168.56.1 -> adfa
+INFO:root:Send to 192.168.56.1:7653 -> dfadf
+INFO:root:Received from None -> dfadf
+INFO:root:Send to 192.168.56.1:7653 -> :q
+INFO:root:Received from None -> :q
+INFO:root:Send to 192.168.56.1:5643 -> 
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:5643 -> 
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 6543
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 63466
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:6543
+INFO:root:Send to 192.168.56.1:6543 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST-FOR-GROUP 1234 adi2
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:6543
+INFO:root:Send to 192.168.56.1:6543 -> CHAT-REQUEST 63466 adi2
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 63466 adi2
+INFO:root:Send to 192.168.56.1 -> OK adi
+INFO:root:Received from 192.168.56.1:6543 -> OK adi
+INFO:root:Send to 192.168.56.1:63466 -> OK
+INFO:root:Received from None -> OK
+INFO:root:Send to 192.168.56.1:63466 -> dafa
+INFO:root:Received from None -> dafa
+INFO:root:Received from None -> fadfa
+ fadfa
+INFO:root:Send to 192.168.56.1:6543 -> fadf
+INFO:root:Received from 192.168.56.1 -> fadf
+INFO:root:Received from 192.168.56.1 -> sfg
+INFO:root:Received from 192.168.56.1 -> :q
+INFO:root:Received from 192.168.56.1:6543 -> 
+INFO:root:Send to 192.168.56.1:63466 -> 
+INFO:root:Send to 192.168.56.1:63466 -> :q
+INFO:root:Received from None -> :q ending-side
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi2
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 34235
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-user-not-online
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 45366
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:45366
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:45366
+INFO:root:Send to 192.168.56.1:15600 -> GET adi2
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:34235
+INFO:root:Send to 192.168.56.1:15600 -> GET adi
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adir3q
+INFO:root:Received from 192.168.56.1 -> search-user-not-found
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 46452
+INFO:root:Received from 192.168.56.1 -> login-online
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi2 1234 46425
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> LOGIN adi 1234 62452
+INFO:root:Received from 192.168.56.1 -> login-success
+INFO:root:Send to 192.168.56.1:15600 -> SEARCH adi2
+INFO:root:Received from 192.168.56.1 -> search-success 192.168.56.1:46425
+INFO:root:Send to 192.168.56.1:46425 -> CHAT-REQUEST 62452 adi
+INFO:root:Received from 192.168.56.1 -> CHAT-REQUEST 62452 adi
+INFO:root:Send to 192.168.56.1 -> OK adi2
+INFO:root:Received from 192.168.56.1:46425 -> OK adi2
+INFO:root:Send to 192.168.56.1:62452 -> OK
+INFO:root:Received from None -> OK
+INFO:root:Received from None -> afad
+> afad
+INFO:root:Send to 192.168.56.1:62452 -> fadf
+INFO:root:Received from None -> fadf
+INFO:root:Send to 192.168.56.1:46425 -> sg
+INFO:root:Received from 192.168.56.1 -> sg
+INFO:root:Send to 192.168.56.1:46425 -> dfh
+INFO:root:Received from 192.168.56.1 -> dfh
+INFO:root:Send to 192.168.56.1:46425 -> :q
+INFO:root:Received from 192.168.56.1 -> :q
+INFO:root:Send to 192.168.56.1:62452 -> 
+INFO:root:Send to 192.168.56.1:62452 -> :q
+INFO:root:Received from None -> :q ending-side
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi
+INFO:root:Send to 192.168.56.1:15600 -> LOGOUT adi2

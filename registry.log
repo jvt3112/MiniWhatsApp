@@ -57,3 +57,106 @@ INFO:root:Received from 192.168.56.1:65311 -> SEARCH sneha
 INFO:root:Send to 192.168.56.1:65311 -> search-success 192.168.56.1:2523
 INFO:root:Received from 192.168.56.1:65293 -> LOGOUT sneha
 INFO:root:Received from 192.168.56.1:65311 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:65389 -> 
+INFO:root:Received from 192.168.56.1:65392 -> JOIN adi2 1234 Hi! There we are using MiniWhatsApp
+INFO:root:Send to 192.168.56.1:65392 -> join-success
+INFO:root:Received from 192.168.56.1:65392 -> LOGIN adi2 1234 6425
+INFO:root:Send to 192.168.56.1:65392 -> login-success
+INFO:root:Received from 192.168.56.1:65387 -> LOGIN adi 1234 7653
+INFO:root:Send to 192.168.56.1:65387 -> login-success
+INFO:root:Received from 192.168.56.1:65387 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:65387 -> search-success 192.168.56.1:6425
+INFO:root:Received from 192.168.56.1:65409 -> LOGIN adi 1234 6245
+INFO:root:Send to 192.168.56.1:65409 -> login-success
+INFO:root:Received from 192.168.56.1:65411 -> LOGIN adi2 1234 4625
+INFO:root:Send to 192.168.56.1:65411 -> login-success
+INFO:root:Received from 192.168.56.1:65409 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:65409 -> search-success 192.168.56.1:4625
+INFO:root:Received from 192.168.56.1:65409 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:65434 -> LOGIN adi 1234 4314
+INFO:root:Send to 192.168.56.1:65434 -> login-success
+INFO:root:Received from 192.168.56.1:65436 -> LOGIN adi2 1234 6426
+INFO:root:Send to 192.168.56.1:65436 -> login-success
+INFO:root:Received from 192.168.56.1:65436 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:65436 -> search-success 192.168.56.1:4314
+INFO:root:Received from 192.168.56.1:49183 -> LOGIN adi 1234 4311
+INFO:root:Send to 192.168.56.1:49183 -> login-success
+INFO:root:Received from 192.168.56.1:49184 -> LOGIN adi2 1234 6356
+INFO:root:Send to 192.168.56.1:49184 -> login-success
+INFO:root:Received from 192.168.56.1:49183 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49183 -> search-success 192.168.56.1:6356
+INFO:root:Received from 192.168.56.1:49197 -> LOGIN adi 1234 4315
+INFO:root:Send to 192.168.56.1:49197 -> login-success
+INFO:root:Received from 192.168.56.1:49198 -> LOGIN adi2 1234 5243
+INFO:root:Send to 192.168.56.1:49198 -> login-success
+INFO:root:Received from 192.168.56.1:49198 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49198 -> search-success 192.168.56.1:4315
+INFO:root:Received from 192.168.56.1:49197 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49197 -> search-success 192.168.56.1:5243
+INFO:root:Received from 192.168.56.1:49197 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49197 -> search-success 192.168.56.1:5243
+INFO:root:Received from 192.168.56.1:49197 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:49215 -> LOGIN adi 1234 5245
+INFO:root:Send to 192.168.56.1:49215 -> login-success
+INFO:root:Received from 192.168.56.1:49218 -> LOGIN adi2 1234 5245
+INFO:root:Send to 192.168.56.1:49218 -> login-success
+INFO:root:Received from 192.168.56.1:49219 -> LOGIN adi2 1234 6362
+INFO:root:Send to 192.168.56.1:49219 -> login-success
+INFO:root:Received from 192.168.56.1:49219 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49219 -> search-success 192.168.56.1:5245
+INFO:root:Received from 192.168.56.1:49219 -> LOGOUT adi2
+INFO:root:Received from 192.168.56.1:49225 -> LOGIN adi2 1234 5245
+INFO:root:Send to 192.168.56.1:49225 -> login-success
+INFO:root:Received from 192.168.56.1:49253 -> LOGIN adi2 1234 5255
+INFO:root:Send to 192.168.56.1:49253 -> login-success
+INFO:root:Received from 192.168.56.1:49252 -> LOGIN adi 1234 5278
+INFO:root:Send to 192.168.56.1:49252 -> login-online
+INFO:root:Received from 192.168.56.1:49252 -> LOGOUT
+INFO:root:Received from 192.168.56.1:49253 -> LOGOUT adi2
+INFO:root:Received from 192.168.56.1:49286 -> LOGIN adi2 1234 4624
+INFO:root:Send to 192.168.56.1:49286 -> login-success
+INFO:root:Received from 192.168.56.1:49283 -> LOGIN adi 1234 7464
+INFO:root:Send to 192.168.56.1:49283 -> login-online
+INFO:root:Received from 192.168.56.1:49283 -> LOGIN adi 1234 4565
+INFO:root:Send to 192.168.56.1:49283 -> login-success
+INFO:root:Received from 192.168.56.1:49283 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49283 -> search-success 192.168.56.1:4624
+INFO:root:Received from 192.168.56.1:49283 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49283 -> search-success 192.168.56.1:4624
+INFO:root:Received from 192.168.56.1:49283 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:49286 -> LOGOUT adi2
+INFO:root:Received from 192.168.56.1:49387 -> LOGIN adi2 1234 7653
+INFO:root:Send to 192.168.56.1:49387 -> login-success
+INFO:root:Received from 192.168.56.1:49379 -> LOGIN adi 1234 5643
+INFO:root:Send to 192.168.56.1:49379 -> login-success
+INFO:root:Received from 192.168.56.1:49387 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49387 -> search-success 192.168.56.1:5643
+INFO:root:Received from 192.168.56.1:49387 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49387 -> search-success 192.168.56.1:5643
+INFO:root:Received from 192.168.56.1:49379 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:49443 -> LOGIN adi 1234 6543
+INFO:root:Send to 192.168.56.1:49443 -> login-success
+INFO:root:Received from 192.168.56.1:49444 -> LOGIN adi2 1234 63466
+INFO:root:Send to 192.168.56.1:49444 -> login-success
+INFO:root:Received from 192.168.56.1:49444 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49444 -> search-success 192.168.56.1:6543
+INFO:root:Received from 192.168.56.1:49444 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49444 -> search-success 192.168.56.1:6543
+INFO:root:Received from 192.168.56.1:49443 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:49444 -> LOGOUT adi2
+INFO:root:Received from 192.168.56.1:49536 -> LOGIN adi 1234 34235
+INFO:root:Send to 192.168.56.1:49536 -> login-success
+INFO:root:Received from 192.168.56.1:49536 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49536 -> search-user-not-online
+INFO:root:Received from 192.168.56.1:49550 -> LOGIN adi2 1234 45366
+INFO:root:Send to 192.168.56.1:49550 -> login-success
+INFO:root:Received from 192.168.56.1:49536 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49536 -> search-success 192.168.56.1:45366
+INFO:root:Received from 192.168.56.1:49536 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:49536 -> search-success 192.168.56.1:45366
+INFO:root:Received from 192.168.56.1:49536 -> GET adi2
+INFO:root:Received from 192.168.56.1:49536 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:49536 -> search-success 192.168.56.1:34235
+INFO:root:Received from 192.168.56.1:49536 -> GET adi
+INFO:root:Received from 192.168.56.1:49536 -> SEARCH adir3q
+INFO:root:Send to 192.168.56.1:49536 -> search-user-not-found
