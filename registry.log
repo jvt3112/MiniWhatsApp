@@ -1,0 +1,59 @@
+INFO:root:Received from 192.168.56.1:64643 -> LOGIN adi2 1234 3524
+INFO:root:Send to 192.168.56.1:64643 -> login-success
+INFO:root:Received from 192.168.56.1:64641 -> LOGIN adi 1234 24523
+INFO:root:Send to 192.168.56.1:64641 -> login-success
+INFO:root:Received from 192.168.56.1:64641 -> SEARCH adi2
+INFO:root:Send to 192.168.56.1:64641 -> search-success 192.168.56.1:3524
+INFO:root:Received from 192.168.56.1:64641 -> JOIN sneha 1234 Hi! There we are using MiniWhatsApp
+INFO:root:Send to 192.168.56.1:64641 -> join-success
+INFO:root:Received from 192.168.56.1:64641 -> LOGOUT adi
+INFO:root:Received from 192.168.56.1:64643 -> LOGOUT adi2
+INFO:root:Received from 192.168.56.1:64662 -> LOGIN sneha 1234 889
+INFO:root:Send to 192.168.56.1:64662 -> login-success
+INFO:root:Received from 192.168.56.1:64663 -> LOGIN adi 1234 563
+INFO:root:Send to 192.168.56.1:64663 -> login-success
+INFO:root:Received from 192.168.56.1:64662 -> SEARCH adi
+INFO:root:Send to 192.168.56.1:64662 -> search-success 192.168.56.1:563
+INFO:root:Received from 192.168.56.1:64662 -> GET sneha
+INFO:root:Received from 192.168.56.1:64663 -> GET adi
+INFO:root:Received from 192.168.56.1:64676 -> LOGIN sneha 1234 7543
+INFO:root:Send to 192.168.56.1:64676 -> login-success
+INFO:root:Received from 192.168.56.1:64676 -> GET sneha
+INFO:root:Received from 192.168.56.1:64773 -> LOGIN sneha 1234 6343
+INFO:root:Send to 192.168.56.1:64773 -> login-success
+INFO:root:Received from 192.168.56.1:64773 -> GET sneha
+INFO:root:Received from 192.168.56.1:64773 -> GET sneha
+INFO:root:Received from 192.168.56.1:64773 -> CHANGE sneha Very Happy
+INFO:root:Send to 192.168.56.1:64773 -> status-changed
+INFO:root:Received from 192.168.56.1:64769 -> LOGIN adi 1234 4525
+INFO:root:Send to 192.168.56.1:64769 -> login-success
+INFO:root:Received from 192.168.56.1:64769 -> GET adi
+INFO:root:Received from 192.168.56.1:65260 -> LOGIN sneha 1234 7536
+INFO:root:Send to 192.168.56.1:65260 -> login-online
+INFO:root:Received from 192.168.56.1:65260 -> LOGIN sneha 1234 5634
+INFO:root:Send to 192.168.56.1:65260 -> login-success
+INFO:root:Received from 192.168.56.1:65260 -> GET sneha
+INFO:root:Received from 192.168.56.1:65260 -> CHANGE sneha Hello
+INFO:root:Send to 192.168.56.1:65260 -> status-changed
+INFO:root:Received from 192.168.56.1:65269 -> LOGIN sneha 1234 3576
+INFO:root:Send to 192.168.56.1:65269 -> login-online
+INFO:root:Received from 192.168.56.1:65269 -> LOGIN sneha 1234 5234
+INFO:root:Send to 192.168.56.1:65269 -> login-success
+INFO:root:Received from 192.168.56.1:65269 -> GET sneha
+INFO:root:Received from 192.168.56.1:65288 -> LOGIN sneha 1234 4252
+INFO:root:Send to 192.168.56.1:65288 -> login-success
+INFO:root:Received from 192.168.56.1:65288 -> GET sneha
+INFO:root:Received from 192.168.56.1:65293 -> LOGIN sneha 1234 2523
+INFO:root:Send to 192.168.56.1:65293 -> login-success
+INFO:root:Received from 192.168.56.1:65293 -> GET sneha
+INFO:root:Received from 192.168.56.1:65293 -> CHANGE sneha Hi
+INFO:root:Send to 192.168.56.1:65293 -> status-changed
+INFO:root:Received from 192.168.56.1:65293 -> GET sneha
+INFO:root:Received from 192.168.56.1:65311 -> JOIN adi 1234 Hi! There we are using MiniWhatsApp
+INFO:root:Send to 192.168.56.1:65311 -> join-success
+INFO:root:Received from 192.168.56.1:65311 -> LOGIN adi 1234 6763
+INFO:root:Send to 192.168.56.1:65311 -> login-success
+INFO:root:Received from 192.168.56.1:65311 -> SEARCH sneha
+INFO:root:Send to 192.168.56.1:65311 -> search-success 192.168.56.1:2523
+INFO:root:Received from 192.168.56.1:65293 -> LOGOUT sneha
+INFO:root:Received from 192.168.56.1:65311 -> LOGOUT adi

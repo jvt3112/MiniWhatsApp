@@ -16,7 +16,6 @@ class DB:
             return True
         else:
             return False
-    
 
     # registers a user
     def register(self, username, password, status):
@@ -26,7 +25,7 @@ class DB:
             "status": status 
         }
         print(status)
-        db.accounts.insert(account)
+        self.db.accounts.insert(account)
 
     def update_status(self,username,status):
         #db.city.update({_id:ObjectId("584a13d5b65761be678d4dd4")}, {$set: {"citiName":"Jakarta Pusat"}})
@@ -41,7 +40,6 @@ class DB:
     def get_status(self, username):
         return self.db.accounts.find_one({"username": username})["status"]
 
-
     # checks if an account with the username online
     def is_account_online(self, username):
         if self.db.online_peers.find({"username": username}).count() > 0:
@@ -49,7 +47,6 @@ class DB:
         else:
             return False
 
-    
     # logs in the user
     def user_login(self, username, ip, port):
         online_peer = {

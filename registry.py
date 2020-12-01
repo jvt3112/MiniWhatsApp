@@ -4,6 +4,7 @@
     ##  150114822 - Eren Ulaş
 '''
 
+from os import stat
 from socket import *
 import threading
 import select
@@ -42,7 +43,7 @@ class ClientThread(threading.Thread):
                 message = self.tcpClientSocket.recv(1024).decode().split()
                 logging.info("Received from " + self.ip + ":" + str(self.port) + " -> " + " ".join(message))            
                 #   JOIN    #
-                print(message)
+                # print(message)
                 if message[0] == "JOIN":
                     # join-exist is sent to peer,
                     # if an account with this username already exists
@@ -69,6 +70,13 @@ class ClientThread(threading.Thread):
                         self.tcpClientSocket.send(response.encode())
                     # join-success is sent to peer,
                     # if an account with this username is not exist, and the account is created
+                elif message[0] == "GET":
+                    if db.is_account_exist(message[1]):
+                        status = db.get_status(message[1])
+                        # response = "status-displayed"
+                        # print("From-> " + self.ip + ":" + str(self.port) + " " + response)
+                        # logging.info("Send to " + self.ip + ":" + str(self.port) + " -> " + response)  
+                        self.tcpClientSocket.send(status.encode())
                 #   LOGIN    #
                 elif message[0] == "LOGIN":
                     # login-account-not-exist is sent to peer,
@@ -156,7 +164,8 @@ class ClientThread(threading.Thread):
                         logging.info("Send to " + self.ip + ":" + str(self.port) + " -> " + response) 
                         self.tcpClientSocket.send(response.encode())
             except OSError as oErr:
-                logging.error("OSError: {0}".format(oErr)) 
+                pass
+                # logging.error("OSError: {0}".format(oErr)) 
 
 
     # function for resettin the timeout for the udp timer thread
@@ -241,7 +250,7 @@ logging.basicConfig(filename="registry.log", level=logging.INFO)
 # as long as at least a socket exists to listen registry runs
 while inputs:
 
-    print("Listening for incoming connections...")
+    # print("Listening for incoming connections...")
     # monitors for the incoming connections
     readable, writable, exceptional = select.select(inputs, [], [])
     for s in readable:
@@ -263,8 +272,8 @@ while inputs:
                 if message[1] in tcpThreads:
                     # resets the timeout for that peer since the hello message is received
                     tcpThreads[message[1]].resetTimeout()
-                    print("Hello is received from " + message[1])
-                    logging.info("Received from " + clientAddress[0] + ":" + str(clientAddress[1]) + " -> " + " ".join(message))
+                    # print("Hello is received from " + message[1])
+                    # logging.info("Received from " + clientAddress[0] + ":" + str(clientAddress[1]) + " -> " + " ".join(message))
                     
 # registry tcp socket is closed
 tcpSocket.close()
