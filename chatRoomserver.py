@@ -5,80 +5,62 @@ import select
 import logging
 import os
 
-BUFFER_SIZE = 32
-SEPARATOR = "<SEPARATOR>"
-
 class chatRoomServer(threading.Thread):
-    # Peer server initialization
+    # chatRoomServer server initialization
     def __init__(self, username, chatRoomServerPort):
         threading.Thread.__init__(self)
-        # keeps the username of the peer
+        # usernam of the peer
         self.username = username
-        # tcp socket for peer server
-        self.tcpServerSocket = socket(AF_INET, SOCK_STREAM)
-        # port number of the peer server
+        # tcp socket for chat room server
+        self.tcpServerChatRoomSocket = socket(AF_INET, SOCK_STREAM)
+        # port number of chat room server
         self.chatRoomServerPort = chatRoomServerPort
-        # if 1, then user is already chatting with someone
-        # if 0, then user is not chatting with anyone
-        self.isChatRequested = 0
-        self.isFileIncoming = 0
-        self.isNameReceived = 0
-        # keeps the socket for the peer that is connected to this peer
-        self.connectedPeerSocket = None
-        # keeps the ip of the peer that is connected to this peer's server
-        self.connectedPeerIP = None
-        # keeps the port number of the peer that is connected to this peer's server
-        self.connectedPeerPort = None
-        # online status of the peer
-        self.isOnline = True
-        # keeps the username of the peer that this peer is chatting with
-        self.chattingClientName = None
-        self.firstJoin = 0
-    
-    # main method of the peer server thread
+        
+    # main function for chat room server that accepts the connections
     def run(self):
 
+        # chat room server started
         print("Chat room server started...")    
-        # gets the ip address of this peer
-        # first checks to get it for windows devices
-        # if the device that runs this application is not windows
-        # it checks to get it for macos devices
-        hostname=gethostname()
-        try:
-            self.chatRoomServerHostname=gethostbyname(hostname)
-        except gaierror:
-            import netifaces as ni
-            self.chatRoomServerHostname = ni.ifaddresses('en0')[ni.AF_INET][0]['addr']
-
-        # ip address of this peer
-        #self.peerServerHostname = 'localhost'
-        # socket initializations for the server of the peer
-        self.tcpServerSocket.bind(("127.0.0.1", self.chatRoomServerPort))
-        self.tcpServerSocket.listen(30)
-        # inputs sockets that should be listened
+        # binding the socket
+        self.tcpServerChatRoomSocket.bind(("127.0.0.1", self.chatRoomServerPort))
+        # listening to the socket
+        self.tcpServerChatRoomSocket.listen(30)
+        
+        # lists of clients and their corresponding nicknames to be used in group chat
         clients = []
         nicknames = []
+
+        # broadcasting messages to all the person in the group chat room
         def broadcast(inputs,message):
             for client in inputs:
+                # sending messages to all the peers in the room
                 client.send(message)
 
+        # handle the data received from all the cleints
         def handle(nicknames,client):
             while True:
                 try:
+                    # message received
                     message = client.recv(1024)
+                    # if the message recived is QUIT
                     if(message[-4:].decode("ascii")=='QUIT'):
                         index = clients.index(client)
+                        # broadcast the QUIT message only to the client
+                        # who quitted
                         broadcast([client],message)
+                        # remove client formt the list
                         clients.remove(client)
-                        print(clients)
+                        # closing client socket once he leaves the group chat
                         client.close()
+                        # removing the nickname from the list
                         nickname = nicknames[index]
                         nicknames.remove(nickname)
+                        # brodcast mssg to clients 
                         broadcast(clients,f"{nickname} has left the chat!".encode("ascii"))
                         break
                     else:
                         broadcast(clients,message)
-                        
+                # remove the client if any exception occurs
                 except Exception as e:
                     index = clients.index(client)
                     clients.remove(client)
@@ -87,23 +69,25 @@ class chatRoomServer(threading.Thread):
                     nicknames.remove(nickname)
                     broadcast(clients,f"{nickname} has left the chat!".encode("ascii"))
                     break
-        # server listens as long as there is a socket to listen in the inputs list and the user is online
-        while not self.firstJoin or len(clients)!=0:
-            connected, addr = self.tcpServerSocket.accept()
-            #connected.setblocking(0)
-            # if the user is not chatting, then the ip and the socket of
-            # this peer is assigned to server variables
+    
+        while True:
+            # accepts the connection
+            connected, addr = self.tcpServerChatRoomSocket.accept()
+            # flag NICK send to get the nickname
             connected.send("NICK".encode("ascii"))
+            # nickname recieved
             nickname =  connected.recv(1024).decode("ascii")
+            # append nickname to the list
             nicknames.append(nickname)
+            # append client to the list
             clients.append(connected)
-            self.firstJoin = 1
             print(f"Username of the client  is {nickname}!")
+            # broadcast mssg about users arrival
             broadcast(clients,f"{nickname} joined the chat!".encode("ascii"))
             connected.send("Connected to the server!".encode("ascii"))
 
             # starting a thread for each user
-            t = threading.Thread(target=handle, args=(nicknames,connected,))
-            t.start()
-        self.tcpServerSocket.close()
+            threadUser = threading.Thread(target=handle, args=(nicknames,connected,))
+            threadUser.start()
+        self.tcpServerChatRoomSocket.close()
         print("Returning from room")
