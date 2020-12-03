@@ -1,20 +1,33 @@
-# P2P Chat
-It is a p2p chat application that uses centralized index approach. It consists of two parts a registry application and a chat application. Registry application keeps track of the peers, and chat application allows peers to communicate with each other.
-* Registry application can achieve following operations:
-    * **Account Creation**<br/>
-    Accounts can be created on registry. Each user is identified by a unique username.
-    * **Login and Logout**<br/>
-    When a user logs in, registry saves its ip address and port number into database and this entry stays in the database until the user logs out or disconnected.<br/>As long as user is online, a 'HELLO' message is sent to registry at every second to indicate that the user is still connected. If the registry hasn't received a 'HELLO' message from a user in 3 seconds, it considers user as disconnected and removes its entry from online peers.
-    * **Search**<br/>
-    A user can search another online user using that user's username to retrieve the ip address and the port number of the user.
-* Chat application can achieve following operations:
-    * **Communication with Registry**<br/>
-    Chat application sends messages to registry to achieve account creation, login, logout, and search operations.
-    * **Chat**<br/>
-    When a user wants to chat with another user, a chat request is sent to the other user. User should send an 'OK' message to accept or a 'REJECT' message to reject. However, if user is already chatting with someone else, then a 'BUSY' message will be sent automatically.
+# MiniWhatsApp
+                        
+# Initialization:
+To download the Mini-Whatsapp github repository, we need to clone it using the following command:</br>
+git clone the repository</br>
+You need to do setup to fulfill requirements:</br>
+Its installation process can be seen here : [Link](https://docs.mongodb.com/manual/tutorial/install-mongodb-enterprise-on-windows/)</br>
+Once installed, run MongoDB compass and connect the database, so that you can analyse the database as the application is run.</br>
+## Some of the python libraries required are :</br>
+* threading </br>
+* pymongo</br>
+* stdiomask </br>
+* select</br>
+# After downloading and setting up:</br>
+To set up our Mini-Whatsapp, we first need to start up the main server (registry.py). </br>
+Simply run the following command:</br>
+` python registry.py ` </br>
+Now the user can start using Mini-Whatsapp by starting the chat program (peer.py) using the following command.<br/>
+` python peer.py ` </br>
+</br>
+Note: The peer connects to the registry using its IP address which will be displayed on the registry side. Also it can be hard-coded if convenient.
+# Main features:
+There are many features that have been packed into this application. Namely:
+1. Create Account: Create an account to use Mini-Whatsapp. You will have to provide a unique username and a password.
+2. Login: Log into Mini-Whatsapp using the account created previously. You will have to provide a username and password to login. You also need to specify the port that you should use to start the peer client (More details in the ‘Communication and Connection Maintenance’ section). Password is masked for the purpose of security.
+3. Logout: Logout from your current session of Mini-Whatsapp. You will then exit the application.
+4. Search: Search for a particular user using their username.
+5. Start Chat: Using the username of a user you can send a request to the user to start a chat session with them. On the receiver-side the user will receive a chat request pop-up where they must type “OK” to start the chat. There is also another option of “OK-SAVE” which the user can choose to save the chat messages. Using ":q" we can quit the chat. ":f" flag during the chat is used for file sharing. 
+6. Change Status: The user can change their status using this command. The user will have a default status (a description in text). He/She can choose to change the status if he/she wishes to do so.
+7. See Status: The user can view the status of any user by entering the username of the user. 
+8. Start Group Chat: The user can also create a group chat with any number of users. The port for the group chat server must also be specified. The user will be able to add the users by entering their names and sending requests to each user. "OK-GROUP-portno." is the message to be sent by acceptor. Group chat can be exited using "QUIT"command. </br>
 
-## How to Use It?
-* Clone the repo.
-* Run 'registry.py'.
-* Run 'peer.py'.
-* Chat!
+For more details : see the report.
